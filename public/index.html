@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style type="text/css">span.iconify, i.iconify, iconify-icon { display: inline-block; width: 1em; }</style>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0;url=https://tasin5541.github.io/" />      
+    <link rel="canonical" href="https://tasin5541.github.io/" />
+    <link rel="icon" href="https://tasin5541.github.io/portfolio/#/home/favicon.ico?v=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Tasin's Portfolio"
+      content="Web site created using create-react-app"
+    />
+    <meta property="og:title" content="Miftaul Mannan Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tasin5541.github.io/portfolio/#/" />
 
-    <!-- Edit meta tags for SEO -->
-    <title>DeveloperFolio | Developer Portfolio Template</title>
-    <meta name="title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta name="description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+      }
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://developerfolio.js.org/">
-    <meta property="og:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="og:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
-    <!-- Link to a hosted image -->
-    <!-- <meta property="og:image" content=""> -->
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://developerfolio.js.org/">
-    <meta property="twitter:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="twitter:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
-    <!-- Link to a hosted image -->
-    <!-- <meta property="twitter:image" content=""> -->
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
 
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="theme-color" content="#6c63ff" />
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #ccc;
+      }
 
-    <!-- Customize icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7">
-    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7" color="#885bd5">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7">
-	  <!--
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png?">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png?">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png?">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png?">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png?">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png?">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png?">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png?">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png?">
+    <link rel="icon" type="image/png" sizes="144x144" href="android-icon-144x144.png?">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png?">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png?">
+    <meta name="theme-color" content="#000000">
+
+    <!--Adsense Advertisement-->
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 825508380 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-825508380"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-825508380'); </script>--> 
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
-    <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"></script>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158726526-1"></script>-->
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
-      gtag('config', 'UA-135618960-2');
+      gtag('config', 'UA-158726526-1');
     </script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.1.0/anime.js"></script>
+    <script src="./canvasjs.min.js"></script>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -65,6 +95,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <title>Miftaul's Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

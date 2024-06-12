@@ -1,407 +1,594 @@
-/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Porfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+// Website related settings
+const settings = {
+  isSplash: true, // Change this to false if you don't want Splash screen.
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
+//Home Page
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+  title: "Miftaul Mannan",
+  logo_name: "Miftaul Mannan",
+  nickname: null,
+  subTitle:
+    "An aspiring developer who loves to take on new projects that challenges his analytical and technological capacities.",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ecfeM8pNH7aLELi5EINHrX8-jY5Uqb0q/view?usp=sharing",
+  portfolio_repository: "https://github.com/Tasin5541",
 };
 
-// Social Media Links
+const socialMediaLinks = [
+  {
+    name: "Github",
+    link: "https://github.com/Tasin5541",
+    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/miftaul-mannan-tasin-566543107/",
+    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+  },
+  {
+    name: "YouTube",
+    link:
+      "https://www.youtube.com/channel/UClvrUclYSGX_MZPOF6ySG6A?view_as=subscriber",
+    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+  },
+  {
+    name: "Gmail",
+    link:
+      "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=tasinmiftaulmannan@gmail.com&subject=MISSED%20CALL%20EZTRADER&body=Hello",
+    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
+    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+  },
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com/tasinmiftaulmannan",
+    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/mm_tasin/",
+    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  },
+];
 
-const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
-};
-
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+const skills = {
+  data: [
+    {
+      title: "Full Stack Development",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Building resposive website using NextJs and React",
+        "⚡ Implementing secure access to database",
+        "⚡ Creating application backend in .Net Core",
+        "⚡ Implementing dynamic script execution defined by user",
+      ],
+      softwareSkills: [
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "NextJs",
+          fontAwesomeClassname: "akar-icons:nextjs-fill",
+          style: {
+            color: "#626262",
+          },
+        },
+        {
+          skillName: ".Net Core",
+          fontAwesomeClassname: "mdi:dot-net",
+          style: {
+            color: "#5C2D91",
+          },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "simple-icons:node-dot-js",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Redux",
+          fontAwesomeClassname: "tabler:brand-redux",
+          style: {
+            color: "#7749bd",
+          },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: {
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "devicon:typescript",
+          style: {
+            color: "#3178c6",
+          },
+        },
+        {
+          skillName: "C#",
+          fontAwesomeClassname: "teenyicons:c-sharp-solid",
+          style: {
+            color: "#953dac",
+          },
+        },
+        {
+          skillName: "MS SQL Server",
+          fontAwesomeClassname: "tabler:sql",
+          style: {
+            color: "#c42626",
+          },
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "vscode-icons:file-type-mongo",
+          style: {
+            color: "#c42626",
+          },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "logos:firebase",
+          style: {
+            color: "#c42626",
+          },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "skill-icons:docker",
+          style: {
+            color: "#c42626",
+          },
+        },
+        {
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "Sass",
+          fontAwesomeClassname: "simple-icons:sass",
+          style: {
+            color: "#CC6699",
+          },
+        },
+        {
+          skillName: "Tailwind CSS",
+          fontAwesomeClassname: "file-icons:tailwind",
+          style: {
+            color: "#38bdf8",
+          },
+        },
+      ],
+    },
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
 };
-
-// Education Section
-
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "90%", //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
-    }
+      progressPercentage: "80%",
+    },
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+//Language Skill
+const sLanguage = {
+  viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      Stack: "React",
+      progressPercentage: "90%",
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      Stack: "NextJs",
+      progressPercentage: "70%",
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      Stack: "JavaScript",
+      progressPercentage: "80%",
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
+      Stack: "TypeScript",
+      progressPercentage: "70%",
+    },
+    {
+      Stack: "Redux",
+      progressPercentage: "70%",
+    },
+    {
+      Stack: ".Net Core",
+      progressPercentage: "70%",
+    },
+    {
+      Stack: "C#",
+      progressPercentage: "80%",
+    },
+    {
+      Stack: "SQL", //Insert stack or technology you have experience in
+      progressPercentage: "80%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "CSS/SASS",
+      progressPercentage: "80%",
+    },
+    {
+      Stack: "NodeJs",
+      progressPercentage: "40%",
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
+//Tools Skill
+const tools = {
+  viewSkillBars: true, //Set it to true to show Proficiency Section
+  experience: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
+      Stack: "Git",
+      progressPercentage: "80%",
+    },
+    {
+      Stack: "Azure Services", //Insert stack or technology you have experience in
+      progressPercentage: "70%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Docker", //Insert stack or technology you have experience in
+      progressPercentage: "60%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Visual Studio Code", //Insert stack or technology you have experience in
+      progressPercentage: "95%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Visual Studio ", //Insert stack or technology you have experience in
+      progressPercentage: "80%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "MS SQL Server", //Insert stack or technology you have experience in
+      progressPercentage: "90%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "MySQL", //Insert stack or technology you have experience in
+      progressPercentage: "70%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Firebase", //Insert stack or technology you have experience in
+      progressPercentage: "60%", //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "MongoDB", //Insert stack or technology you have experience in
+      progressPercentage: "60%", //Insert relative proficiency in percentage
+    },
+  ],
+};
+
+// Education Page
+const competitiveSites = {
+  competitiveSites: [
+    {
+      siteName: "Codechef",
+      iconifyClassname: "simple-icons:codechef",
+      style: {
+        color: "#5B4638",
+      },
+      profileLink: "https://www.codechef.com/users/tasin95",
+    },
+  ],
+};
+
+const degrees = {
+  degrees: [
+    {
+      title: "Ahsanullah University of Science and Technology",
+      subtitle: "B.Sc. in Computer Science and Engineering",
+      logo_path: "aust_logo.png",
+      alt_name: "IIITDM Kurnool",
+      duration: "March 2016 - January 2021",
+      cgpa: "3.855 / 4.00",
+      descriptions: [
+        "⚡ I have studied basic software engineering subjects like DS, Algorithms, OOP, DBMS, OS, CA, AI etc.",
+        "⚡ Apart from this, I have done courses on Deep Learning and Full Stack Development.",
+        "⚡ Placed 4th in my class.",
+        "⚡ Dean's List.",
+        "⚡ I was selected for ITEE Training Program which comprised of 20 students in the CSE department.",
+        "⚡ Elected as the team leader in all the group projects.",
+      ],
+      website_link: "http://aust.edu/",
+    },
+  ],
+};
+
+const certifications = {
+  certifications: [
+    {
+      title: "TENCON 2021",
+      subtitle: "- Nirmal Nair",
+      logo_path: "tencon.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1wLzB3oGkyI4svn09Yor2sAeSF3DbPzeU/view?usp=sharing",
+      alt_name: "New Zealand",
+      color_code: "white",
+    },
+    {
+      title: "Python Data Structures",
+      subtitle: "- Charles Russell Severance",
+      logo_path: "michigan_logo.png",
+      certificate_link:
+        "https://coursera.org/share/259bcebba35c1ba43934608a5fab9907",
+      alt_name: "Michigan University",
+      color_code: "#2A73CC",
+    },
+    {
+      title: "Python Basics",
+      subtitle: "- Charles Russell Severance",
+      logo_path: "michigan_logo.png",
+      certificate_link:
+        "https://coursera.org/share/39d3749b06308a77e0f596129029d4fe",
+      alt_name: "Michigan University",
+      color_code: "#2A73CC",
+    },
+
+    {
+      title: "React: The Big Picture",
+      subtitle: "- Cory House",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1qcJipEjDB3YanZor4xHpU_9BC73FuCud/view?usp=sharing",
+      alt_name: "Pluralsight",
+      color_code: "#000000",
+    },
+    {
+      title: "React: Getting Started",
+      subtitle: "- Samer Buna",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1LYzFiq0DDYYiDHowG4nbPjgmjCgd3QiV/view?usp=sharing",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Javascript: Getting Started",
+      subtitle: "- Mark Zamoyta",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/12qhxMM2DGp4YVdG9wcpFDNX7r1bjqumx/view?usp=sharing",
+      alt_name: "Pluralsight",
+      color_code: "#000000",
+    },
+    {
+      title: "Designing React Components",
+      subtitle: "- Peter Kellner",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Managing React State",
+      subtitle: "- Cory House",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Building Applications with React and Redux",
+      subtitle: "- Cory House",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/15UMAKzJq1g1cIrz-sp1Ve0efg-M-hAq1/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Using React Hooks",
+      subtitle: "- Peter Kellner",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/15mPlLGrjpmkdlf3eyi7B_NLG8Wro5EEg/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Styling React Component",
+      subtitle: "- Jake Trent",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/14Wvag5M1sGzOlgWCC2PPDX4SsUkiqf72/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Testing React Components",
+      subtitle: "- Liam McLennan",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1654lPVh6R1zwSjgZjHV9gz7mgQ7wRmLm/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Server Rendering React Components",
+      subtitle: "- Daniel Stern",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/14YrLAmZlGNx2PayR0unlLjMoySL-eRG5/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Optimize Performance React",
+      subtitle: "- Hendrik Swanepoel",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/15kaZAf9642Kp_LBXYeqiVSzInaz-peAi/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Node.js The Big Picture",
+      subtitle: "- Paul O'Fallon",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/16jqLAZ4rWiUmITkGGxrZb68Eo5l77UPu/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Node.js Getting Started",
+      subtitle: "- Samer Buna",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/173qXhPtqI1zwSzcb487R3Ud_0j13LiDP/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+    {
+      title: "Using MongoDB with Node.js",
+      subtitle: "- Samer Buna",
+      logo_path: "pluralsight_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/16za14GrABr8xBM8r8hCtag1fO2faZTD8/view",
+      alt_name: "Pluralsight.",
+      color_code: "#000000",
+    },
+  ],
+};
+
+// Experience Page
+const experience = {
+  title: "Experience",
+  subtitle: "Work and Volunteership",
+  description:
+    "Fullstack Developer with 2+ years of experience working with React, .Net and NodeJs in an agile environment. Experience in leading a 5 member frontend team to achieve concrete goals on a strict deadline in a large scale project consisting over millions of records of drivers all throughout North America.",
+  header_image_path: "experience.svg",
+  sections: [
+    {
+      title: "Work",
+      experiences: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          title: "Fullstack Developer",
+          company: "CodeExcel inc.",
+          company_url: "https://codeexcel.ca/",
+          logo_path: "codeexcel.jpg",
+          duration: "January 2021 - PRESENT",
+          location: "Markham, ON, Canada (Remote)",
+          description:
+            "Worked with 2 Insurance Bureau of Canada and Pixelmask Inc. as a Contractor via CodeExcel. Engaged in 5 successful projects utilizing stacks such as: React, .Net Core, MS SQL Server, Azure Cloud Services (AD, B2C, Key Vault, Blob Storage, Front Door etc). The projects are mainly focused towards the North American Insurance Industry.",
+          features: [
+            "- Led the frontend team that resulted in a 25% increase in sprint completion rate.",
+            "- Implemented Single Sign-On (SSO) via Azure B2C across multiple legacy projects, simplifying user experience and reducing account management, resulting in seamless login with company credentials.",
+            "- Uncovered critical project vulnerabilities within 2 days of joining the IBC team, enabling timely remediation and preventing potential losses.",
+            "- Slashed development cost by 13% by suggesting and building a SCIM v2 compliant API for automatic user provisioning between IDP and application instead of using third party solution.",
+            "- Implemented flexible payment gateway module, empowering clients to easily switch gateways, boosting convenience and expanding options.",
+            "- Optimized UI performance by 15% and eliminated code redundancy using React's functional components, custom hooks, and Redux.",
+          ],
+          color: "#0879bf",
         },
+      ],
+    },
+    {
+      title: "Volunteerships",
+      experiences: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          title: "Developer Program Member",
+          company: "Github",
+          company_url: "https://github.com/",
+          logo_path: "github_logo.png",
+          duration: "September 2020 - PRESENT",
+          location: "Work From Home",
+          description:
+            "I am actively contributing to many opensource projects. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
+          features: [],
+          color: "#181717",
         },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      ],
     },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
   ],
-  display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+// Projects Page
+const projectsHeader = {
+  title: "Projects",
+  description:
+    "My projects makes use of vast variety of latest technology tools. My best experience is to create Full Stack projects and deploy them to web applications using cloud infrastructure. Stil trying to gain experience by trying my hands on different projects.",
+  avatar_image_path: "projects_image.svg",
 };
 
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+// Contact Page
+const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "tasin.png",
+    description:
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Basic Programming, ML, AI, Android, Cloud and Opensource Development.",
+  },
+  blogSection: {
+    title: "Blogs",
+    subtitle:
+      "I like to write about the projects I've worked on, my current work and discuss my latest foundings. You are most welcome to input your thoughts on my projects.",
+    link: "https://miftaulmannan.wordpress.com/projects/",
+    avatar_image_path: "blogs_image.svg",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Banani, Dhaka-1212, Bangladesh",
+    avatar_image_path: "address_image.svg",
+    location_map_link: "https://goo.gl/maps/yV1Vkp7L3to9qvKX6",
+  },
+  phoneSection: {
+    title: "Phone Number",
+    subtitle: "+880 1953699363",
+  },
 };
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
+  settings,
   greeting,
   socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
+  skills,
   techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  sLanguage,
+  tools,
+  competitiveSites,
+  degrees,
+  certifications,
+  experience,
+  projectsHeader,
+  contactPageData,
 };
