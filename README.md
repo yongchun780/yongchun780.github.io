@@ -1,32 +1,30 @@
-Freelancer Jekyll theme  
-=========================
+# [Linda L's Personal Website](https://lingduo-l.github.io/)
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+A personal portfolio website to showcase projects, life experiences, and achievements. 
 
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2020-01-18
-img: cabin.png
-alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
+## Installation and Usage
 
----
-```
+### If you haven't already set up your personal website:
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
+Follow the [Jekyll documentation](https://jekyllrb.com/docs/) to create your blog using Jekyll.
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+**NOTE**: If you are using Jekyll with GitHub Pages, see the [GitHub Pages installation section](#github-pages-installation).
 
----------
-For more details, read the [documentation](http://jekyllrb.com/)
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Jekyll
+- Hosting: GitHub Pages
+
+## Jekyll Template
+
+- Built using the Jekyll template ["No Style, Please!"](https://github.com/riggraz/no-style-please.git)
+- Adheres to the Contributor Covenant code of conduct.
+
+## Contributing
+
+- This is a personal website; pull requests are generally not accepted unless for significant issues.
+- For contributions related to the Jekyll template used, refer to the "Jekyll Template" section above.
+
